@@ -1,112 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  		<title>game_1</title>
+        <title>game_1</title>
 
     <!-- STYLESHEETS -->
-    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    		<link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <link rel="stylesheet" href="main.css">
 
     <!-- VENDOR SCRIPTS -->
-    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <!-- APPLICATION SCRIPTS -->
-    		<script src="main.js"></script>
+            <script src="main.js"></script>
    </head>
 
 
-	<body>
-	<h1 class='what'> Hello </h1>
+    <body>
+    <h1 class='what'> The race of X's and O's </h1>
+    <h2 class='the'>player one is X and player two is O </h2>
+    <h3 class='fudge'>use the "a" key to move X and the "l" key to move O </h3>
+    <h4> <button class="btn btn-danger" type="submit">Reset the game</button>
+</h4>
 <!-- make boxes -->
-	  <div class="container">
+      <div class="container">
       <div class="row">
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
+        <div class="col-md-1 purple box start 0"></div>
+        <div class="col-md-1 green box 1"></div>
+        <div class="col-md-1 purple box 2"></div>
+        <div class="col-md-1 green box 3"></div>
+        <div class="col-md-1 purple box 4"></div>
+        <div class="col-md-1 green box 5"></div>
+        <div class="col-md-1 purple box 6"></div>
+        <div class="col-md-1 green box 7"></div>
+        <div class="col-md-1 purple box 8"></div>
+        <div class="col-md-1 green box 9"></div>
+        <div class="col-md-1 purple box 10"></div>
+        <div class="col-md-1 green box 11"></div>
       </div>
 
       <div class="row">
-      	<div class="col-md-11"></div>
-      	<div class="col-md-1 purple box"></div>
-	  </div>
-	  <div class="row">
-      	<div class="col-md-11"></div>
-      	<div class="col-md-1 green box"></div>
-	  </div>
+        <div class="col-md-11"></div>
+        <div class="col-md-1 purple box 12"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-11"></div>
+        <div class="col-md-1 green box 13"></div>
+      </div>
 
       <div class="row">
         
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
+        <div class="col-md-1 green box 25"></div>
+        <div class="col-md-1 purple box 24"></div>
+        <div class="col-md-1 green box 23"></div>
+        <div class="col-md-1 purple box 22"></div>
+        <div class="col-md-1 green box 21"></div>
+        <div class="col-md-1 purple box 20"></div>
+        <div class="col-md-1 green box 19"></div>
+        <div class="col-md-1 purple box 18"></div>
+        <div class="col-md-1 green box 17"></div>
+        <div class="col-md-1 purple box 16"></div>
+        <div class="col-md-1 green box 15"></div>
+        <div class="col-md-1 purple box 14"></div>
       </div>
 
       <div class="row">
-      	<div class="col-md-1 purple box"></div>
-      	<div class="col-md-11"></div>
-	  </div>
-	  <div class="row">
-      	<div class="col-md-1 green box"></div>
-      	<div class="col-md-11"></div>
-	  </div>
-
+        <div class="col-md-1 purple box 26"></div>
+        <div class="col-md-11"></div>
+      </div>
       <div class="row">
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
+        <div class="col-md-1 green box 27"></div>
+        <div class="col-md-11"></div>
       </div>
 
       <div class="row">
-      	<div class="col-md-11"></div>
-      	<div class="col-md-1 purple box"></div>
-	  </div>
-	  <div class="row">
-      	<div class="col-md-11"></div>
-      	<div class="col-md-1 green box"></div>
-	  </div>
+        <div class="col-md-1 purple box 28"></div>
+        <div class="col-md-1 green box 29"></div>
+        <div class="col-md-1 purple box 30"></div>
+        <div class="col-md-1 green box 31"></div>
+        <div class="col-md-1 purple box 32"></div>
+        <div class="col-md-1 green box 33"></div>
+        <div class="col-md-1 purple box 34"></div>
+        <div class="col-md-1 green box 35"></div>
+        <div class="col-md-1 purple box 36"></div>
+        <div class="col-md-1 green box 37"></div>
+        <div class="col-md-1 purple box 38"></div>
+        <div class="col-md-1 green box 39"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-11"></div>
+        <div class="col-md-1 purple box 40"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-11"></div>
+        <div class="col-md-1 green box 41"></div>
+      </div>
 
       <div class="row">
         
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
-        <div class="col-md-1 green box"></div>
-        <div class="col-md-1 purple box"></div>
+        <div class="col-md-1 green box 53"></div>
+        <div class="col-md-1 purple box 52"></div>
+        <div class="col-md-1 green box 51"></div>
+        <div class="col-md-1 purple box 50"></div>
+        <div class="col-md-1 green box 49"></div>
+        <div class="col-md-1 purple box 48"></div>
+        <div class="col-md-1 green box 47"></div>
+        <div class="col-md-1 purple box 46"></div>
+        <div class="col-md-1 green box 45"></div>
+        <div class="col-md-1 purple box 44"></div>
+        <div class="col-md-1 green box 43"></div>
+        <div class="col-md-1 purple box 42"></div>
       </div>
 </div>
 </body>
@@ -115,5 +119,5 @@
 
 
 
-	</body>
+    </body>
 </html>
