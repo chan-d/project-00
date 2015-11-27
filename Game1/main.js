@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	alert('the document is ready');
+	alert('Let\'s play a game!');
 	$('.btn').click(function clearBoard(){
 	$('.box').empty();
 		posOne = 0;
