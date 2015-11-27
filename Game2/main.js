@@ -15,22 +15,49 @@ var posMario = 0;
 $('.0').append(megaMan);
 $('.0').append(mario);
 
-// die roll	
+// die roll	for megaman
 
-$('.btn').on('click', function rollDice(event) {
+$('.btn1').on('click', function rollDice(event) {
 	var die1 = document.getElementById('die1');
 	var die2 = document.getElementById('die2');
-	var status = document.getElementById('status');
+	var status1 = document.getElementById('status1');
 	var d1 = Math.floor(Math.random() * 6) + 1; 
 	var d2 = Math.floor(Math.random() * 6) + 1; 
 	var diceTotal= d1 + d2; 
 	die1.innerHTML = d1;
 	die2.innerHTML = d2; 
-	status.innerHTML = "You rolled " + diceTotal + "."; 
+	status1.innerHTML = "You rolled " + diceTotal + "."; 
 	
 
-
+		if(event) {
+			$('#megaman').remove();
+			posMegaMan = diceTotal + posMegaMan;
+			$('.'+posMegaMan).append(megaMan);
+		}
+	
 });
+//die roll for mario
+$('.btn2').on('click', function rollDice(event) {
+	var die3 = document.getElementById('die3');
+	var die4 = document.getElementById('die4');
+	var status = document.getElementById('status2');
+	var d3 = Math.floor(Math.random() * 6) + 1; 
+	var d4 = Math.floor(Math.random() * 6) + 1; 
+	var diceTotal= d3 + d4; 
+	die3.innerHTML = d3;
+	die4.innerHTML = d4; 
+	status2.innerHTML = "You rolled " + diceTotal + "."; 
+	
+
+		if(event) {
+			$('#marip').remove();
+			posMario = diceTotal + posMario;
+			$('.'+posMario).append(mario);
+		}
+	
+});
+
+
 
 // moving players
 

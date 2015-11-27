@@ -17,21 +17,36 @@
 	z-index: 1; 
 }
 
-.middle {
+.left {
 	text-align: center;
 	position: relative;	
-	background-color: red;
+	display: inline-block;
+	background-color: blue;
 	min-height: 100px;
-	min-width: 100px;
-	top: 50%;
-	left: 50%;
+	min-width: 40%;
+	top: 49%;
+	left: 0%;
 	margin: 0 auto 0 auto; 
 	z-index: 2;
 	float: left;
 }
 
+.right {
+	text-align: center;
+	position: relative;	
+	display: inline-block;
+	background-color: red;
+	min-height: 100px;
+	min-width: 40%;
+	top: 49%;
+	left: 0%;
+	margin: 0 auto 0 auto; 
+	z-index: 2;
+	float: right;
+}
+
 .dice{
-	float: left; 
+	display: inline-block;
 	width: 32px; 
 	background: white;
 	border: 1px solid black;
@@ -40,4 +55,10 @@
 	text-align: center;
 	margin: 5px;
 
+}
+
+h2{
+	font-size: 30px;
+	color: white;
+	text-align: center;
 }
