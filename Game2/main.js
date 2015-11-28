@@ -1,7 +1,7 @@
 $(document).ready(function() {
 //sanity check
 alert('ready');
-	$(window).load(function() {
+	$(window).load(function isTurn() {
 		if (Math.random() > 0.50) {		
 			var turn = 0;
 			alert('Megaman starts!');
@@ -34,6 +34,15 @@ var megaManLap = 0;
 var marioLap = 0; 
 $('.megaManLap').text('lap '+ megaManLap + '/3');
 $('.marioLap').text('lap '+ marioLap + '/3');
+
+//reset button
+$('.btn3').on('click', function () {
+	$('.box').empty();
+	posMegaMan = 0;
+	posMario = 0;
+	isTurn();
+	$('.btn3').hide();
+	});
 
 
 // die roll	for megaman
@@ -70,7 +79,10 @@ $('.btn1').on('click', function rollDice(event) {
 						if(megaManLap > 3) {
 							alert('Megaman wins!!!');
 							$('.0').append(megaMan);
-							return;
+							$('.btn1').hide();
+							$('.btn2').hide();
+							$('.btn3').show();
+							return; 
 						} else {
 							console.log(megaManLap);
 						}
@@ -106,9 +118,6 @@ $('.btn2').on('click', function rollDice(event) {
 	} else {
 		return;
 	}
-
-	
-
 		if(event) {
 			$('#mario').remove();
 			posMario = diceTotal + posMario;
@@ -118,7 +127,10 @@ $('.btn2').on('click', function rollDice(event) {
 						if(marioLap > 3) {
 							alert('Mario wins!');
 							$('.0').append(mario);
-							return; 
+							$('.btn1').hide();
+							$('.btn2').hide();
+							$('.btn3').show();
+							return;
 						} else{
 							console.log(marioLap);
 						}
@@ -132,7 +144,7 @@ $('.marioLap').text('lap '+ marioLap + '/3');
 
 });
 
- });
+});
 
 
 }); 
