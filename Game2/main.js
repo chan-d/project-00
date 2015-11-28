@@ -14,6 +14,10 @@ var posMegaMan = 0;
 var posMario = 0;
 $('.0').append(megaMan);
 $('.0').append(mario);
+var megaManLap = 0;
+var marioLap = 0; 
+
+
 
 // die roll	for megaman
 
@@ -28,11 +32,17 @@ $('.btn1').on('click', function rollDice(event) {
 	die2.innerHTML = d2; 
 	status1.innerHTML = "You rolled " + diceTotal + "."; 
 	
-
 		if(event) {
 			$('#megaman').remove();
 			posMegaMan = diceTotal + posMegaMan;
-			$('.'+posMegaMan).append(megaMan);
+				if (posMegaMan > 35) {
+					var over = (posMegaMan - 35) -1;
+					megaManLap ++;
+					posMegaMan = 0;
+					$('.' + over).append(megaMan);
+				} else {
+					$('.'+posMegaMan).append(megaMan);
+				}
 		}
 	
 });
@@ -50,9 +60,16 @@ $('.btn2').on('click', function rollDice(event) {
 	
 
 		if(event) {
-			$('#marip').remove();
+			$('#mario').remove();
 			posMario = diceTotal + posMario;
-			$('.'+posMario).append(mario);
+				if (posMario > 35) {
+					var over = (posMario - 35) -1;
+					marioLap ++;
+					posMario = 0;
+					$('.' + over).append(mario);
+				} else {
+					$('.'+ posMario).append(mario);
+				}
 		}
 	
 });
