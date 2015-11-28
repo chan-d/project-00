@@ -11,10 +11,10 @@ alert('ready');
 		}
 		
 //store megaman and mario in image object
-var megaMan = new Image(25,25);
+var megaMan = new Image(25, 25);
 megaMan.src ="http://www.adiumxtras.com/images/pictures/8bit_mega_man_1_20276_6496_image_9810.png";
 megaMan.id = "megaman";
-var mario = new Image(25,25);
+var mario = new Image(30, 30);
 mario.src ="http://t3.rbxcdn.com/f1bb58b5032175e1dd552fdb60a102cb";
 mario.id = "mario";
 
@@ -144,7 +144,14 @@ $('.marioLap').text('lap '+ marioLap + '/3');
 
 });
 
+
+//have to make item boxes.. and item functions...
+//have to fix h1 and h2.. 
+//have to add more two players... 
+//maybe add shortcuts.. 
+//styleize everything.. 
+
+
+
 });
-
-
 }); 
