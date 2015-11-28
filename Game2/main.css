@@ -52,15 +52,20 @@
 	width: 32px; 
 	background: white;
 	border: 1px solid black;
-	padding: 10px;
-	font-size: 15px;
+	padding: 5px;
+	font-size: 10px;
 	text-align: center;
 	margin: 5px;
 
 }
-
+.btn1{
+	display: none;
+}
+.btn2{
+	display: none;
+}
 h3{
-	font-size: 30px;
+	font-size: 20px;
 	color: white;
 	text-align: center;
 }
