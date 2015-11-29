@@ -111,16 +111,16 @@ $(window).on('keypress', function handlerL (event) {
 	});
 
 $(window).on('keypress', function handlerZ (event) {
-		if (event.which === 74) { //j
+		if (event.which === 106) { //j
 			moveLeftZ(); //left for zelda
 			$( ('.y' + yCordZ ) + ('.x' + xCordZ) ).append(zelda);
-		} else if (event.which === 76) { //l
+		} else if (event.which === 108) { //l
 			moveRightZ(); //right for zelda
 			$( ('.y' + yCordZ ) + ('.x' + xCordZ) ).append(zelda);
-		} else if (event.which === 73) { //i
+		} else if (event.which === 105) { //i
 			moveUpZ(); //up for zelda
 			$( ('.y' + yCordZ ) + ('.x' + xCordZ) ).append(zelda);
-		} else if(event.which === 75) { //k
+		} else if(event.which === 107) { //k
 			moveDownZ(); //down for zelda
 			$( ('.y' + yCordZ ) + ('.x' + xCordZ) ).append(zelda);
 	}
