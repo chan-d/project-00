@@ -13,6 +13,7 @@
 	z-index: 1;
 	text-align: center; 
 }
+
 .board {
 	position: absolute;
 	left: 10px; 
@@ -20,7 +21,23 @@
 	margin: auto;
 }
 
-.middle{
+.red{
+	border: 3px solid red;
+}
+
+.green {
+	 border: 3px solid green;
+}
+
+.blue{
+	 border: 3px solid blue;
+}
+
+.yellow {
+	 border: 3px solid yellow;
+}
+
+.middle {
 	text-align: center; 
 	position: relative;
 	display: inline-block;
@@ -30,7 +47,6 @@
 	min-width:100px; 
 	min-height:100px; 
 }
-
 
 .left {
 	text-align: center;
@@ -68,25 +84,46 @@
 	margin: 5px;
 
 }
+
 .btn1{
 	display: none;
 }
+
 .btn2{
 	display: none;
 }
+
 .btn3{
 	display: none;
 }
 
+#topBanner {
+	position: relative;
+
 }
+
+#topBannerTwo {
+	position: relative;
+
+}
+
+body {
+	background-color: darkgray;
+}
+
+
 h1 {
 	text-align: center;
 	position: relative;
 	max-height: 10%;
 	max-width: 75%;
+
+	display: block;
+	margin-left:  auto;
+	margin-right: auto;
 }
 
-h3{
+h3 {
 	font-size: 20px;
 	color: white;
 	text-align: center;

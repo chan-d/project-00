@@ -1,6 +1,7 @@
 $(document).ready(function() {
 //sanity check
-alert('ready');
+alert('ready?');
+
 	$(window).load(function isTurn() {
 		if (Math.random() > 0.50) {		
 			var turn = 0;
@@ -9,7 +10,7 @@ alert('ready');
 			var turn = 1;
 			alert('Mario starts!');
 		}
-		
+	
 //store megaman and mario in image object
 var megaMan = new Image(25, 25);
 megaMan.src ="http://www.adiumxtras.com/images/pictures/8bit_mega_man_1_20276_6496_image_9810.png";
@@ -17,6 +18,7 @@ megaMan.id = "megaman";
 var mario = new Image(30, 30);
 mario.src ="http://t3.rbxcdn.com/f1bb58b5032175e1dd552fdb60a102cb";
 mario.id = "mario";
+
 
 //start position for megaman and mario
 
@@ -68,8 +70,6 @@ $('.btn1').on('click', function rollDice(event) {
 		return;
 	}
 
-
-	
 		if(event) {
 			$('#megaman').remove();
 			posMegaMan = diceTotal + posMegaMan;
@@ -146,10 +146,10 @@ $('.marioLap').text('lap '+ marioLap + '/3');
 
 
 //have to make item boxes.. and item functions...
-//have to fix h1 and h2.. 
+
 //have to add more two players... 
 //maybe add shortcuts.. 
-//styleize everything.. 
+
 
 
 

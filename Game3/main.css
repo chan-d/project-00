@@ -1,0 +1,17 @@
+
+.box {
+	height: 25px;
+	border: 1px solid black;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.col-sm-6 {
+	padding: 0;
+}
+
+.col-sm-12{
+	padding: 0;
+}
+
