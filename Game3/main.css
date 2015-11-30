@@ -16,18 +16,24 @@
 }
 
 .linkScore {
+	vertical-align: center;
 	text-align: right; 
 	float: left;
 	position: relative;
 	min-height: 50px;
 	background-color: green;
+	color: white;
+	font-family: helvetica;
 }
 .zeldaScore {
+	vertical-align: center;
 	text-align: right;
 	float:left;
 	position: relative;
 	min-height: 50px;
 	background-color: pink;	
+	color: white;
+	font-family: helvetica; 
 
 }
 
@@ -36,3 +42,6 @@
 	padding: 0;
 	margin: 0 auto;
 }
+
+body {
+	background-image: url(http://img1.wikia.nocookie.net/__cb20131217232254/zelda/images/9/92/Zelda-a-link-between-worlds-hyrule-map.jpg)

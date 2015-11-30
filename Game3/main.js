@@ -1,38 +1,38 @@
 $(document).ready(function(){
 
-var link = new Image(10,10);
+var link = new Image(25,25);
 	link.src = "http://2.bp.blogspot.com/_NvrrpaQZaO4/TUBkoyF1jBI/AAAAAAAAAA0/tKrBUc2xcA8/s1600/Giant_16_bit_Link_sprite_2_by_dragonpjb.gif";
 	link.id = "link";
 
-var zelda = new Image(10,10);
+var zelda = new Image(25,25);
 	zelda.src = "http://www.zeldadungeon.net/wiki/images/8/82/Princess-Zelda-Sprite.png";
 	zelda.id = "zelda";
 
-var heart = new Image(10,10);
-	heart.src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+var heart = new Image(20,20);
+	heart.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 	heart.id = "heart";
 
-//I know this looks terrible.. but i could not get it to work any other way.. :(
+//I know this looks terrible.. but I could not get it to work any other way with the time I had.. :(
 var scoreHeart1 = new Image(10,10);
-	scoreHeart1.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart1.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart2 = new Image(10,10);
-	scoreHeart2.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart2.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart3 = new Image(10,10);
-	scoreHeart3.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart3.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart4 = new Image(10,10);
-	scoreHeart4.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart4.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart5 = new Image(10,10);
-	scoreHeart5.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart5.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart6 = new Image(10,10);
-	scoreHeart6.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart6.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart7 = new Image(10,10);
-	scoreHeart7.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart7.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart8 = new Image(10,10);
-	scoreHeart8.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart8.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart9 = new Image(10,10);
-	scoreHeart9.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart9.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 var scoreHeart10 = new Image(10,10);
-	scoreHeart10.src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5zSv49pRCccru3MomqJD8hGyyCvLHH1LIW37sRElD-dZx6A_GMiQj9w";
+	scoreHeart10.src = "http://www.zeldadungeon.net/wiki/images/1/10/HeartContainer.png";
 
 $('.l1').append(scoreHeart1);
 $('.l2').append(scoreHeart2);
@@ -219,7 +219,7 @@ var moveDownZ = function() {
 		return; 
 	}
 };
-
+//keypress movement for link
 $(window).on('keypress', function handlerL (event) {
 		if(event.which === 97) { //a
 			moveLeft();//left for link
@@ -235,7 +235,7 @@ $(window).on('keypress', function handlerL (event) {
 			checkForHeart();
 		}
 	});
-
+//keypress movement for zelda
 $(window).on('keypress', function handlerZ (event) {
 		if (event.which === 106) { //j
 			moveLeftZ(); //left for zelda
